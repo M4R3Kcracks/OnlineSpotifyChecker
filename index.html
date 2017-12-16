@@ -21,7 +21,6 @@ body {
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }
-
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -33,7 +32,6 @@ body {
 		background-position: 0% 50%
 	}
 }
-
 @-moz-keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -42,14 +40,9 @@ body {
 		background-position: 100% 50%
 	}
 	100% {
-
-
-
-
 	background-position: 0% 50%
 	}
 }
-
 @keyframes Gradient {
 	0% {
 		background-position: 0% 50%
@@ -61,10 +54,8 @@ body {
 		background-position: 0% 50%
 	}
 }
-
 h1,
 h4,
-
 h6 {
 	font-family: 'Open Sans';
 	font-weight: 300;
@@ -79,7 +70,6 @@ h6 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .buttons {
      display: flex;
   align-items: center;
@@ -88,7 +78,6 @@ h6 {
     width: 65%;
 	
  }
-
 .btn-hover {
     width: 200px;
     font-size: 16px;
@@ -100,14 +89,12 @@ h6 {
     text-align:center;
     border: none;
     background-size: 300% 100%;
-
     border-radius: 50px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-
 .btn-hover:hover {
     background-position: 100% 0;
     moz-transition: all .4s ease-in-out;
@@ -115,21 +102,14 @@ h6 {
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
-
 .btn-hover:focus {
     outline: none;
 }
-
 .btn-hover.color-8 {
     background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
     box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 	
-
-
-
 }
-
-
 .form-control  {
     height: 80px;
     width: 50%;
@@ -142,11 +122,9 @@ h6 {
 }
 .left {
 float: left;
-
 }
 .right{
 float: left;
-
 }
 </style>
 	
@@ -173,9 +151,9 @@ float: left;
 	<br id="lol">
         <div class="m-t-40 card-box">
             <div class="text-center">
-                <h3 class="text-uppercase font-bold m-b-0">Spotify Account Checker</h3>  <small>Because of technical issues this doesnt check for Premium Family anymore. :(</small>
-                <h5>Powered By <a href="https://m4r3k.me">M4R3K</a></h5><br>
-		     <h5>You can find the source <a href="https://github.com/M4R3Kcracks/OnlineSpotifyAccountChecker/">HERE</a></h5><br>
+                <h3 class="text-uppercase font-bold m-b-0">Spotify Account Checker</h3>  <small>Because of technical issues this doesnt check for Premium Family anymore. :(</small><br>
+                <h5>Powered By <a href="https://m4r3k.me">M4R3K</a></h5>
+		     <small>You can find the source <a href="https://github.com/M4R3Kcracks/OnlineSpotifyAccountChecker/">HERE</a></small><br><br>
                 
         
                 
@@ -222,10 +200,6 @@ username:password</textarea>
 
 <script type="text/javascript">
 var clipboard = new Clipboard('.cpy');
-
-
-
-
     function parse_accounts(){
         var accounts = $("#tocheck_acc")[0].value;
         accounts = accounts.split("\n");
@@ -234,13 +208,10 @@ var clipboard = new Clipboard('.cpy');
         $("#done_div")[0].innerHTML = "<strong>Check done</strong>";
 		$("#cpy")[0].hidden = false;
 		$("#lol")[0].hidden = true;
-
-
     }
 	var d = new Date();
 var d = new Date(dateString);
 var d = new Date(year, month, day, hours, minutes, seconds);
-
     function check(account){
         var account = account.split(":");
         var username = account[0];
@@ -252,8 +223,6 @@ var d = new Date(year, month, day, hours, minutes, seconds);
   $("#live_acc")[0].value +  " Checked on " + d        } else {
                 $("#dead_acc")[0].value = $("#dead_acc")[0].value +  username + ":" + password + "\n";
             }
-
-
         });
     }
 </script>
@@ -262,5 +231,3 @@ var d = new Date(year, month, day, hours, minutes, seconds);
 </body>
 
 </html>
-
-
