@@ -11,6 +11,10 @@ File.readlines(file).each do |line|
 	
   if result.include? "PREMIUM"
   	puts"[LIVE] #{splitfields[0]} #{senhafix} | PREMIUM".green
+	  
+  elsif result.include? "PREMIUM + HULU"
+   	puts"[LIVE] #{splitfields[0]} #{senhafix} | PREMIUM + HULU".green
+	  
   elsif result.include? "FREE"
    	puts"[LIVE] #{splitfields[0]} #{senhafix} | FREE".yellow
   else
