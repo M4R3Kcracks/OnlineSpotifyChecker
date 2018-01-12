@@ -85,13 +85,34 @@ class spotify{
             $result = curl_exec($ch);
             if (strpos($result, "re currently Spotify Free.") !== false) {
                 $output_check['subscription'] = "FREE";
+            } else if (strpos($result, "'label': 'family-plan'") !== false) {
+                $output_check['subscription'] = "FAMILY";
+                
+            }  else if (strpos($result, "'label': 'bundle'") !== false) {
+                $output_check['subscription'] = "PREMIUM + HULU";
             } else {
                 $output_check['subscription'] = "PREMIUM";
             }
+          
+
+            preg_match_all('/<b class="recurring-date">(.*)<\/b>/Uism',$result,$match);
+            preg_match_all('/<p class="form-control-static" id="card-profile-country">(.*)<\/p>/Uism',$result,$matchs);
+
+            if (empty($match[1])) {
+                $output_check['Validuntil'] = "n/a";
+            } else {
+                $output_check['Validuntil'] = $match[1];
+            }
+
+            if (empty($match[1])) {
+                $output_check['Country'] = "n/a";
+            } else {
+                $output_check['Country'] = $matchs[1];
+            }
+
         }
-        $output_json = json_encode($output_check);
-        return $output_json;
+
+      $output_json = json_encode($output_check);
+      return $output_json;
     }
 }
-
-
