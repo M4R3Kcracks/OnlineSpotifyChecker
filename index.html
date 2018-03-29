@@ -10,61 +10,47 @@
 <script src="js/clipboard.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+	text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+a:hover {
+    color: white-space;
+}
+
+/* selected link */
+a:active {
+    color: white-space;
+}
+link{
+text-decoration: underline;
+text-decoration-color: black;
+}
 body {
 	width: 100wh;
 	height: 90vh;
 	color: #fff;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
+	background: linear-gradient(-48deg, #00bf8f, #001510);
+	background-size: 100% 120%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-	background-position: 0% 50%
-	}
-}
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-h1,
-h4,
-h6 {
+h3,
+small
+ {
 	font-family: 'Open Sans';
-	font-weight: 300;
-	text-align: center;
-	position: absolute;
-	top: 45%;
-	right: 0;
-	left: 0;
+	color: black;
+
 }
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -141,9 +127,8 @@ float: left;
 
 <center> 
 
-  <div class="alert alert-info" id="done_div" hidden>
+  
 
-                </div>
     <div class="clearfix"></div>
     <div class="wrapper-page">
    
@@ -151,8 +136,7 @@ float: left;
 	<br id="lol">
         <div class="m-t-40 card-box">
             <div class="text-center">
-                <h3 class="text-uppercase font-bold m-b-0">Spotify Account Checker</h3>  <small>Because of technical issues this doesnt check for Premium Family anymore. :(</small><br>
-                <h5>Powered By <a href="https://m4r3k.me">M4R3K</a></h5>
+                <h3 class="text-uppercase font-bold m-b-0">Spotify Account Checker</h3>  
 		     <small>You can find the source <a href="https://github.com/M4R3Kcracks/OnlineSpotifyAccountChecker/">HERE</a></small><br><br>
                 
         
@@ -181,18 +165,25 @@ username:password</textarea>
 				<button type="button" id="cpy"  class="right cpy btn-hover color-8"  data-clipboard-target="#live_acc" hidden>
     Copy to clipboard
 </button>
+
+
  </div>
  </columns>
 </div>
 </container>
   </row>
-
+<div class="alert alert-info" id="done_div" hidden>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+<footer> 
+<div> &nbsp </div>
 
+<h5> Credit to <link><a href="https://twitter.com/VesVesely">M4R3K</a> </link></h5>
+</footer>
 <!-- jQuery and Bootstrap -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.min.js"></script>
